@@ -29,31 +29,22 @@
         .contact-form input[type="submit"]:hover {
           background-color: #125c39;            /* Hover efekti: daha koyu yeşil */
         /*}*/
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: left;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-}
-.contact-form input, .contact-form textarea {
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
+  height: 48px; /* normalin 2 katı yükseklik */
+  padding: 14px 16px;
+  font-size: 18px;
+  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
 }
-.contact-form input[type="submit"] {
-  background-color: #177246;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-.contact-form input[type="submit"]:hover {
-  background-color: #125c39;
+
+/* Sadece textarea daha büyük olabilir */
+.contact-form textarea {
+  height: 120px; /* Daha yüksek metin kutusu */
+  resize: vertical; /* Kullanıcı boyutunu ayarlayabilsin */
 }
 
 

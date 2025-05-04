@@ -7,12 +7,16 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
         header { background: #177246; color: white; padding: 30px 20px; text-align: center; }
-        nav { background: #145c3b; text-align: center; padding: 10px; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        section { padding: 30px; max-width: 1000px; margin: auto; }
-        .service, .portfolio-item { background: white; padding: 20px; margin: 20px 0; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        nav { background: #145c3b; text-align: center; padding: 10px; flex-wrap: wrap; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; display: inline-block; padding: 8px 12px; }
+        section { padding: 20px; max-width: 900px; margin: auto; }
+        .service, .portfolio-item { background: white; padding: 15px; margin: 15px 0; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
         footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 40px; }
-        .logo-img { width: 160px; height: auto; border-radius: 10px; margin-bottom: 15px; box-shadow: 0 0 5px #aaa; }
+        .logo-img { width: 100%; max-width: 200px; height: auto; border-radius: 10px; margin-bottom: 10px; box-shadow: 0 0 5px #aaa; }
+        @media (max-width: 600px) {
+            header h1, header h2, header h3 { font-size: 1.2rem; }
+            nav a { display: block; margin: 5px 0; }
+        }
     </style>
 </head>
 <body>
@@ -26,6 +30,7 @@
     <a href="#services">Hizmetler</a>
     <a href="#portfolio">Portföy</a>
     <a href="#contact">İletişim</a>
+    <a href="blog.html">Blog</a>
 </nav>
 
 <section id="services">
@@ -61,11 +66,10 @@
 </section>
 
 <section id="contact">
-  <h2>İletişim</h2>
-  <p>E-posta: <a href="mailto:kaana3460@gmail.com">kaana3460@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmetexcel" target="_blank">linkedin.com/in/ahmetexcel</a></p>
-  <p>Fiverr: <a href="https://www.fiverr.com/ahmetexcel" target="_blank">fiverr.com/ahmetexcel</a></p>
-  <p>Mobil: <a href="tel:+905319198543">0 (531) 919 85 43</a></p>
+    <h2>İletişim</h2>
+    <p>E-posta: <a href="mailto:ahmetexcel@gmail.com">ahmetexcel@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ahmetexcel" target="_blank">linkedin.com/in/ahmetexcel</a></p>
+    <p>Fiverr: <a href="https://www.fiverr.com/ahmetexcel" target="_blank">fiverr.com/ahmetexcel</a></p>
 </section>
 
 <footer>

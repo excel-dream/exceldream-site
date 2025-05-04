@@ -18,13 +18,33 @@
             nav a { display: block; margin: 5px 0; }
         }
         
-        .contact-form {
-          width: 100%;
-          max-width: 500px;
-          margin: 0;
-          text-align: left;
-        }
+ }
 
+.contact-form input,
+.contact-form textarea {
+  width: 38%;               /* ✅ Buton gibi tam genişlik */
+  padding: 7px 14px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 0px;
+}
+
+        
+.contact-form input[type="submit"] {
+  background-color: #177246;   /* YEŞİL zemin */
+  color: white;                /* BEYAZ yazı */
+  padding: 12px 20px;          /* Daha geniş ve yüksek */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 38%;                 /* Kutunun tamamını kaplasın */
+  text-align: center;
+  display: block;
+  margin-top: 5px;
+}
         
     </style>
 </head>

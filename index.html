@@ -17,12 +17,19 @@
             header h1, header h2, header h3 { font-size: 1.2rem; }
             nav a { display: block; margin: 5px 0; }
         }
-        .contact-form {
-          width: 100%;
-          max-width: 500px;
-          margin: 0;
-          text-align: left;
+        .contact-form input[type="submit"] {
+          padding: 12px;                         /* Buton yüksekliği */
+          background-color: #177246;            /* Yeşil arka plan */
+          color: white;                         /* Beyaz yazı */
+          font-size: 16px;                      /* Daha okunaklı yazı */
+          border: none;                         /* Kenarlık yok */
+          border-radius: 4px;                   /* Yumuşak köşeler */
+          cursor: pointer;                      /* Üzerine gelince el ikonu */
         }
+        .contact-form input[type="submit"]:hover {
+          background-color: #125c39;            /* Hover efekti: daha koyu yeşil */
+        }
+
 
     </style>
 </head>
